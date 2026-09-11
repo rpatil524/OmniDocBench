@@ -60,6 +60,8 @@ OmniDocBench
 - [引用](#引用)
 
 ## 更新
+[2026/09/11] 新增TeleOCR、OvisOCR2、Unlimited-OCR的榜单。
+
 [2026/04/30] 从版本**v1.6** 更新到 **v1.7**,新增QianfanOCR的榜单,支持skills方式评测。
 
 [2026/04/09] **重大版本更新**：从版本**v1.5** 更新到 **v1.6**
@@ -521,26 +523,48 @@ $$\text{Overall} = \frac{(1-\textit{Text Edit Distance}) \times 100 + \textit{Ta
     </thead>
     <tbody>
         <tr>
+            <td>TeleOCR</td>
+            <td>Specialized VLMs</td>
+            <td>1.2B</td>
+            <td><strong>96.91</strong></td>
+            <td><ins>0.0267</ins></td>
+            <td>96.5895</td>
+            <td><strong>96.8183</strong></td>
+            <td><strong>98.1806</strong></td>
+            <td>0.1184</td>
+        </tr>
+        <tr>
+            <td>OvisOCR2</td>
+            <td>Specialized VLMs</td>
+            <td>0.8B</td>
+            <td><ins>96.47</ins></td>
+            <td><strong>0.0265</strong></td>
+            <td><ins>97.4854</ins></td>
+            <td>94.5842</td>
+            <td>96.9768</td>
+            <td><strong>0.1120</strong></td>
+        </tr>
+        <tr>
             <td>PaddleOCR-VL-1.6</td>
             <td>Specialized VLMs</td>
             <td>0.9B</td>
-            <td><strong>96.34</strong></td>
-            <td><strong>0.0326</strong></td>
+            <td>96.34</td>
+            <td>0.0326</td>
             <td><strong>97.5304</strong></td>
-            <td><strong>94.7619</strong></td>
-            <td><strong>97.1002</strong></td>
+            <td><ins>94.7619</ins></td>
+            <td><ins>97.1002</ins></td>
             <td>0.1278</td>
         </tr>
         <tr>
             <td>MinerU2.5-Pro</td>
             <td>Specialized VLMs</td>
             <td>1.2B</td>
-            <td><ins>95.75</ins></td>
+            <td>95.75</td>
             <td>0.036</td>
-            <td><ins>97.45</ins></td>
-            <td><ins>93.42</ins></td>
-            <td><ins>95.92</ins></td>
-            <td><ins>0.120</ins></td>
+            <td>97.45</td>
+            <td>93.42</td>
+            <td>95.92</td>
+            <td>0.120</td>
         </tr>
         <tr>    
             <td>GLM-OCR</td>
@@ -576,6 +600,17 @@ $$\text{Overall} = \frac{(1-\textit{Text Edit Distance}) \times 100 + \textit{Ta
             <td>0.135</td>
         </tr>
         <tr>
+            <td>Unlimited-OCR</td>
+            <td>Specialized VLMs</td>
+            <td>3B</td>
+            <td>94.00</td>
+            <td>0.0394</td>
+            <td>95.7234</td>
+            <td>90.21</td>
+            <td>93.3565</td>
+            <td>0.1281</td>
+        </tr>
+        <tr>
             <td>Youtu-Parsing</td>
             <td>Specialized VLMs</td>
             <td>2.5B</td>
@@ -584,7 +619,7 @@ $$\text{Overall} = \frac{(1-\textit{Text Edit Distance}) \times 100 + \textit{Ta
             <td>93.63</td>
             <td>92.02</td>
             <td>95.00</td>
-            <td><strong>0.116</strong></td>
+            <td><ins>0.116</ins></td>
         </tr>
         <tr>
             <td>Qianfan-OCR</td>
@@ -602,7 +637,7 @@ $$\text{Overall} = \frac{(1-\textit{Text Edit Distance}) \times 100 + \textit{Ta
             <td>General VLMs</td>
             <td>30B</td>
             <td>93.70</td>
-            <td><ins>0.035</ins></td>
+            <td>0.035</td>
             <td>95.17</td>
             <td>89.44</td>
             <td>92.40</td>
@@ -1941,6 +1976,21 @@ config中参数解释以及数据集格式请参考`Layout检测`小节，公式
       <td>Qianfan-OCR</td>
       <td><a href="https://huggingface.co/baidu/Qianfan-OCR">Qianfan-OCR</a></td>
       <td><a href="https://huggingface.co/baidu/Qianfan-OCR">HuggingFace Qianfan-OCR</a></td>
+    </tr>
+    <tr>
+      <td>TeleOCR</td>
+      <td><a href="https://github.com/caipeng328/NaviDC-OCR">TeleOCR</a></td>
+      <td><a href="https://huggingface.co/StarDoc-AI/TeleOCR">HuggingFace TeleOCR</a></td>
+    </tr>
+    <tr>
+      <td>OvisOCR2</td>
+      <td><a href="https://huggingface.co/ATH-MaaS/OvisOCR2">OvisOCR2</a></td>
+      <td><a href="https://huggingface.co/ATH-MaaS/OvisOCR2">HuggingFace OvisOCR2</a></td>
+    </tr>
+    <tr>
+      <td>Unlimited-OCR</td>
+      <td><a href="https://github.com/baidu/Unlimited-OCR">Unlimited-OCR</a></td>
+      <td><a href="https://huggingface.co/baidu/Unlimited-OCR">HuggingFace Unlimited-OCR</a></td>
     </tr>
     <tr>
       <td>dots.ocr</td>
